@@ -1,7 +1,243 @@
-body {
-	//width: 1344px;
-	height: 7015px;
-	background-image: url(../images/Conlab_site_preview8_black_1344.jpg);
-	background-repeat: no-repeat;
-	background-position: center top;
+:root {
+--bg-1: #34495e;
+--bg-2: #3498db;
 }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Roboto, sans-serif;
+}
+
+.main_header {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	justify-content: center;
+	width: inherit;
+	height: inherit;
+	background-image: url(../images/Top_2400x1146.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: cover;
+	background-color: #464646;
+  min-width : 730px;
+  min-height: 480px;
+  max-height: 1000px;
+}
+
+.main_header_top {
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	align-items: center;
+	align-self: flex-start;
+  width: 100%;
+	height: 96px;
+}
+
+.main_header_top_logo {
+	display: flex;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+  width: 192px;
+	height: 96px;
+}
+
+.main_header_top_logo a {
+  width: 160px;
+  height: 52px;
+  background-image: url(../images/logo_white_160x52.svg);
+  background-repeat: no-repeat;
+}
+
+.main_header_top_menu {
+	display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  width: 576px;
+	height: 96px;
+}
+
+.main_header_top_menu a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 11pt;
+  font-weight: normal;
+  text-decoration: none;
+  background-color: black;
+  padding: 14px;
+}
+
+.main_header_top_menu a:hover {
+  outline: 2px solid white;
+  outline-offset: -2px;
+  box-shadow: 4px 4px 0 white;
+}
+
+.main_header_top_search {
+  display: flex;
+	position: relative;
+  justify-content: flex-end;
+  align-items: center;
+	width: 192px;
+	height: 96px;
+}
+
+.main_header_top_search_a {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 96px;
+  height: 96px;
+}
+
+.main_header_top_search_a a {
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/search.svg);
+  background-repeat: no-repeat;
+}
+
+.main_header_center {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+  justify-content: space-between;
+  align-items: center;
+	width: 100%;
+}
+
+.main_header_center_text_left {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 96px;
+  height: 288px;
+}
+
+.main_header_center_text_left span {
+  transform: rotate(-90deg);
+  color: white;
+  text-transform: uppercase;
+  font-size: 11pt;
+  font-weight: 100;
+  white-space: nowrap;
+}
+
+.main_header_center_text_center {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 384px;
+  height: 126px;
+  left: 295px;
+  top: -60px;
+  /*background-color: #3498db;*/
+}
+
+.main_header_center_text_center_line {
+  height: 40px;
+}
+
+.main_header_center_text_center span {
+  font-family: Roboto Slab;
+  color: white;
+  text-transform: none;
+  font-size: 22pt;
+  font-weight: normal;
+}
+
+.main_header_center_text_right {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 96px;
+  height: 192px;
+}
+
+.main_header_center_text_right span {
+  transform: rotate(-90deg);
+  color: white;
+  text-transform: uppercase;
+  font-size: 11pt;
+  font-weight: 100;
+  white-space: nowrap;
+}
+
+.main_header_bottom {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	justify-content: space-between;
+	align-self: flex-end;
+	width: 100%;
+	height: 96px;
+}
+
+/*
+.main_header_bottom_point {
+  position: relative;
+  background-color: #3498db;
+  width: 384px;
+  height: 96px;
+}
+*/
+
+.main_header_bottom_social {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 384px;
+  height: 96px;
+}
+
+.main_header_bottom_social_instagram,
+.main_header_bottom_social_facebook,
+.main_header_bottom_social_twitter {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 96px;
+  height: 96px;
+}
+
+.main_header_bottom_social_instagram a {
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/instagram.svg);
+  background-repeat: no-repeat;
+}
+
+.main_header_bottom_social_facebook a {
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/facebook.svg);
+  background-repeat: no-repeat;
+}
+
+.main_header_bottom_social_twitter a {
+  width: 30px;
+  height: 24px;
+  background-image: url(../images/twitter.svg);
+  background-repeat: no-repeat;
+}
+
+/*
+.nav {
+	width: inherit;
+	height: 500px;
+}
+*/
